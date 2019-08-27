@@ -5,6 +5,8 @@ let comp_score = 0;
 let userChoice="";
 let compChoice="";
 
+let toggleTime = 200;
+
 
 let choices = ["Rock","Paper","Scissors"];
 
@@ -71,7 +73,7 @@ document.getElementById('uRock').onclick = function(){
 	check();
 	updateScore();
 	setTimeout(function(){
-		toggleSelect()},500);
+		toggleSelect()},toggleTime);
 	
 	
 	
@@ -86,7 +88,7 @@ document.getElementById('uPaper').onclick = function(){
 	check();
 	updateScore();
 	setTimeout(function(){
-		toggleSelect()},500);
+		toggleSelect()},toggleTime);
 	
 	
 	
@@ -100,7 +102,7 @@ document.getElementById('uScissors').onclick = function(){
 	check();
 	updateScore();
 	setTimeout(function(){
-		toggleSelect()},500);
+		toggleSelect()},toggleTime);
 
 }
 
